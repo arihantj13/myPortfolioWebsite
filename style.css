@@ -68,6 +68,15 @@ section {
   padding: 80px;
 }
 
+#particles-js {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-attachment: fixed;
+}
+
 .banner {
   position: relative;
   min-height: 100vh;
@@ -75,7 +84,6 @@ section {
   justify-content: space-between;
   align-items: center;
   background: #111111;
-  /* background: url(Images/Image-2.jpg); */
   background-size: cover;
   background-position: right;
 }
@@ -115,6 +123,7 @@ section {
 }
 
 /* Abbout Me Layout */
+
 .heading {
   width: 100%;
   text-align: center;
@@ -234,52 +243,6 @@ section {
   color: #009e66;
   text-decoration: none;
 }
-
-/* Testimonial Layout */
-/* .testimonial {
-  background: #000;
-}
-
-.testimonial .content {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  flex-direction: row;
-}
-
-.testimonial .content .testimonialbox {
-  background: #161616;
-  margin: 20px;
-  padding: 60px 40px;
-  max-width: calc(50% - 40px);
- border-bottom-left-radius: 20%;
-  border-bottom-right-radius: 20%; 
-  cursor: pointer;
-}
-
-.testimonial .content .testimonialbox p {
-  color: #ffff;
-  font-size: 20px;
-  font-weight: 100;
-  font-style: italic;
-  font-family: "Times New Roman", Times, serif;
-  line-height: 24px;
-}
-
-.testimonial .content .testimonialbox h3 {
-  color: #009e66;
-  margin-top: 40px;
-  text-align: end;
-  font-weight: 200;
-  line-height: 20px;
-  font-style: italic;
-  line-height: 1.5em;
-  font-size: 20px;
-}
-
-.testimonialbox:hover {
-  border-bottom: 2px solid #009e66;
-} */
 
 /* Contact Layout Right Side */
 .contact {
@@ -411,6 +374,7 @@ footer.copyright {
 }
 
 /* Making Responsive Layout */
+
 @media (max-width: 991px) {
   header,
   header.sticky {
@@ -539,12 +503,7 @@ footer.copyright {
   }
 }
 
-/* @media (max-width: 768px) {
-  .testimonial .content .testimonialbox {
-    max-width: calc(100% - 20px);
-    padding: 40px 20px;
-    margin: 30px;
-  }
+@media (max-width: 768px) {
   .heading.bottom {
     display: flex;
     justify-content: space-between;
@@ -554,15 +513,10 @@ footer.copyright {
 }
 
 @media (max-width: 600px) {
-  .testimonial .content .testimonialbox {
-    max-width: calc(100% - 20px);
-    padding: 40px 20px;
-    margin: 30px;
-  }
   .heading.bottom {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
   }
-} */
+}

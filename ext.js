@@ -3,6 +3,8 @@ window.addEventListener("scroll", function () {
     header.classList.toggle("sticky", window.scrollY > 0);
 });
 
+
+
 function toggleMenu() {
     let menuToggle = document.querySelector(".toggle");
     let menu = document.querySelector(".menu");

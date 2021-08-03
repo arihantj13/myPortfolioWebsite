@@ -157,10 +157,12 @@ section {
 }
 
 .propic {
-  width: 300px;
+  object-fit: cover;
+  width: 250px;
   height: 250px;
-  border-top-left-radius: 30%;
-  border-bottom-right-radius: 30%;
+  border-radius: 50%;
+  border: 5px solid #000000b0;
+  cursor: pointer;
 }
 
 .heading.bottom {
@@ -232,6 +234,8 @@ section {
 }
 
 .work .content .workbox p {
+  font-size: 25px;
+  font-weight: 600;
   text-align: center;
 }
 

@@ -8,6 +8,7 @@
 }
 
 /* Navigation Bar */
+
 header {
   position: fixed;
   top: 0;
@@ -49,6 +50,7 @@ header ul li a {
 }
 
 /* Sticky Navigation Bar  */
+
 header.sticky {
   background: rgb(255, 255, 255);
   padding: 20px 80px;
@@ -64,6 +66,7 @@ header.sticky ul li a {
 }
 
 /* Adding All My Section Tag Fixed Padding  */
+
 section {
   padding: 80px;
 }
@@ -198,8 +201,7 @@ section {
   cursor: pointer;
 }
 
-.skill-box:hover > .skill-title:after,
-.skill-box:hover > .skill-title:before {
+.skill-box:hover>.skill-title:after, .skill-box:hover>.skill-title:before {
   width: 25px;
 }
 
@@ -273,6 +275,7 @@ section {
 }
 
 /* Project Layout */
+
 .work .content {
   display: flex;
   justify-content: center;
@@ -306,12 +309,14 @@ section {
   text-decoration: none;
   color: #000;
 }
+
 .work .content .workbox a:active {
   color: #009e66;
   text-decoration: none;
 }
 
 /* Contact Layout Right Side */
+
 .contact {
   background: #000;
 }
@@ -325,20 +330,19 @@ section {
   min-width: 60%;
 }
 
-.formbox h3,
-.contactinfo h3 {
+.formbox h3, .contactinfo h3 {
   color: #fff;
   font-size: 20px;
   font-weight: 500;
   margin-bottom: 10px;
 }
+
 .formbox form {
   display: flex;
   flex-direction: column;
 }
 
-.formbox form input,
-.formbox form textarea {
+.formbox form input, .formbox form textarea {
   margin-bottom: 20px;
   padding: 15px;
   font-size: 16px;
@@ -350,14 +354,12 @@ section {
   resize: vertical;
 }
 
-.formbox form input:focus,
-.formbox form textarea:focus {
+.formbox form input:focus, .formbox form textarea:focus {
   border-bottom: 2px solid #009e66;
   transition: 0.5s;
 }
 
-.formbox form input::placeholder,
-.formbox form textarea::placeholder {
+.formbox form input::placeholder, .formbox form textarea::placeholder {
   color: #999;
 }
 
@@ -370,6 +372,7 @@ section {
 }
 
 /* Contact Layout Left Side */
+
 .contactinfo {
   min-width: 40%;
 }
@@ -406,8 +409,7 @@ section {
   font-weight: 300;
 }
 
-.contactinfobox .box .text p,
-address {
+.contactinfobox .box .text p, address {
   font-size: normal;
   font-weight: 300;
   color: #999;
@@ -433,6 +435,7 @@ address {
 }
 
 /* Footer Layout */
+
 footer.copyright {
   background: #000;
   color: #fff;
@@ -443,15 +446,12 @@ footer.copyright {
 /* Making Responsive Layout */
 
 @media (max-width: 990px) {
-  header,
-  header.sticky {
+  header, header.sticky {
     padding: 20px 50px;
   }
-
   header .menu {
     display: none;
   }
-
   header .menu {
     position: fixed;
     background: white;
@@ -465,7 +465,6 @@ footer.copyright {
     border-top: 1px solid #111;
     transition: 0.5s;
   }
-
   header .menu.active {
     position: fixed;
     background: white;
@@ -477,99 +476,81 @@ footer.copyright {
     height: 100vh;
     text-align: center;
   }
-
   header ul li a {
     font-size: 20px;
     color: #111;
     font-weight: 400;
     margin: 10px 0px;
   }
-
   .toggle {
     width: 40px;
     height: 40px;
-    background-image: url(Images/menu.png);
+    background-image: url(./Assets/menu.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 30px;
     cursor: pointer;
   }
-
   .toggle.active {
     width: 40px;
     height: 40px;
-    background-image: url(Images/close.png);
+    background-image: url(./Assets/close.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 25px;
     cursor: pointer;
   }
-
   header.sticky .toggle {
     filter: invert(1);
   }
-
   section {
     padding: 100px 30px;
   }
-
   .banner {
     padding: 150px 50px 100px;
   }
-
   .banner h2 {
     font-size: 1.5em;
   }
-
   .banner h3 {
     font-size: 1em;
   }
-
   .textbox {
     position: relative;
     top: 170px;
   }
-
   .button {
     margin-top: 10px;
     padding: 10px 20px;
     font-size: 16px;
     border-radius: 50px;
   }
-
   .content {
     flex-direction: column;
   }
-
   .contentbox {
     padding: 0;
   }
-
   .content .w50 img {
     display: block;
     margin: 0 auto 30px auto;
   }
-
   .contentbox h2 {
     font-size: 20px;
     font-weight: 300;
   }
-
   .contentbox h3 {
     font-size: 20px;
   }
   .heading h2 {
     font-size: 24px;
   }
-
   .skills .content .skilllsBx {
     margin: 10px;
   }
-
   .contactInfo {
     margin: 10px 0;
   }
-
   .container {
     grid-template-columns: repeat(3, 1fr);
     padding: 2rem 50px;

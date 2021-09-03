@@ -3,6 +3,8 @@
     async function handleSubmit(event) {
       event.preventDefault();
       var status = document.getElementById("status");
+      document.getElementById("status").style.color = "green";
+      document.getElementById("status").delay(5000).fadeout(1500);
       var data = new FormData(event.target);
       fetch(event.target.action, {
         method: form.method,

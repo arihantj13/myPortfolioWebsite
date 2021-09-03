@@ -259,7 +259,7 @@
                     <input type="text" placeholder="Full Name" name="Fname">
                     <input type="email" placeholder="Email" name="email">
                     <textarea name="" id="" rows="6" placeholder="Your Message"></textarea>
-                    <input type="submit" value="Send Message" name="msg">
+                    <input type="submit" onclick="setTimeout(function () {document.getElementById('status').style.display='none'}, 5000); return false" value="Send Message" name="msg">
 
                     <div id="status"></div>
                 </form>

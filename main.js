@@ -4,9 +4,7 @@
       event.preventDefault();
       var status = document.getElementById("status");
       document.getElementById("status").style.color = "green";
-      $(function() {
-        setTimeout(function() { $("#status").fadeOut(1500); }, 5000)
-      })
+     
       var data = new FormData(event.target);
       fetch(event.target.action, {
         method: form.method,

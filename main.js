@@ -15,7 +15,8 @@
         status.innerHTML = "Thanks for your submission!";
         form.reset()
       }).catch(error => {
-        status.innerHTML = "Oops! There was a problem"
+        status.innerHTML = "Oops! There was a problem";
+        status.style.color = "red";
       });
     }
     form.addEventListener("submit", handleSubmit)

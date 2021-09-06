@@ -152,6 +152,7 @@ section {
 .contentbox {
   padding-left: 30px;
   text-align: justify;
+  margin-top: 30px;
 }
 
 .contentbox h2 {

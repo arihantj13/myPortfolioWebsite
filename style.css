@@ -291,6 +291,8 @@ section {
 
 .work .content .workbox img {
   max-width: 100%;
+  width: 430px;
+  height: 250px;
   border: 1px solid #000;
 }
 
